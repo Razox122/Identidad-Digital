@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Actualizar Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://media.istockphoto.com/id/1284691550/es/vector/el-vector-de-fondo-sutil-de-las-capas-de-papel-de-forma-din%C3%A1mica-geom%C3%A9trica-abstracta-azul.jpg?s=612x612&w=0&k=20&c=0dS3MXtxV1_cTyZKPjfqryo5yeyFbvjHHlUMi4NLfAg=" >
+    <center>
+    <table class="style-tabla" border="2">
+        <thead>
+            <tr>
+                <th class="Titulo" colspan="2"> <center><h1>Actualizar Registro</h1></center></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h2>Ingrese los nuevos datos:</h2>
+                    <form action="guardar_datos_imagen.php" method="post" enctype="multipart/form-data">
+                        <label>Clave de Lector:</label><br>
+                        <input class="clavelector" type="text" name="clavelector" required><br><br>
+                        <label>Nombre:</label><br>
+                        <input class="nombre" type="text" name="nombre"><br><br>
+                        <label>Apellido:</label><br>
+                        <input class="apellido" type="text" name="apellido"><br><br>
+                        <label>Email:</label><br>
+                        <input type="email" name="email"><br><br>
+                        <label>Contrasena:</label><br>
+                        <input type="password" name="contraseña"><br><br>
+                        <input type="submit" value="Actualizar">
+                    </form>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </center>
+</body>
+</html>

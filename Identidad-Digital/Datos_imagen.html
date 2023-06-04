@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Prueba Tabla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://media.istockphoto.com/id/1284691550/es/vector/el-vector-de-fondo-sutil-de-las-capas-de-papel-de-forma-din%C3%A1mica-geom%C3%A9trica-abstracta-azul.jpg?s=612x612&w=0&k=20&c=0dS3MXtxV1_cTyZKPjfqryo5yeyFbvjHHlUMi4NLfAg=" >
+    <center>
+    <table class="style-tabla" border="2">
+        <thead>
+            <tr>
+                <th class="Titulo" colspan="3"> <center><h1>Formulario</h1></center></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h2>Formulario de registro</h2>
+                    <form action="guardar_datos_imagen.php" method="post" enctype="multipart/form-data">
+                        <label>Nombre:</label><br>
+                        <input class="nombre" type="text" name="nombre" maxlength="10"><br><br>
+                        <label>Apellido:</label><br>
+                        <input class="apellido" type="text" name="apellido"><br><br>
+                        <label>Email:</label><br>
+                        <input type="email" name="email"><br><br>
+                        <label>Contrasena:</label><br>
+                        <input type="password" name="contraseña"><br><br>
+                        <label>Clave de Lector:</label><br>
+                        <input class="clavelector" type="text" name="clavelector"><br><br>
+
+                        <input type="file" name="imagen">
+                        <br><br>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Eliminar o Actualizar Registro</h2>
+                    <form action="guardar_datos_imagen.php" method="post">
+                        <label>Clave de Lector:</label>
+                        <input class="clavelector" type="text" name="clavelector" required>
+                        <br><br>
+                        <input type="submit" name="eliminar" value="Eliminar">
+                        <input type="submit" name="actualizar" value="Actualizar">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </center>
+</body>
+</html>
